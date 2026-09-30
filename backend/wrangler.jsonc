@@ -1,0 +1,20 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "zuitopia",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "../web",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/config.js", "/admin"]
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "zuitopia",
+    "database_id": "00000000-0000-0000-0000-000000000000"
+  }],
+"vars": {
+  "PUBLIC_ORIGIN": "https://zuitopia-creator.github.io",
+  "CONTACT_EMAIL": "zuitopia1@gmail.com"
+}
+}

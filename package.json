@@ -1,0 +1,17 @@
+{
+  "name": "zuitopia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/api.test.js && python3 -m unittest discover -s tests -p 'test_*.py'",
+    "dev": "wrangler dev --config backend/wrangler.jsonc",
+    "deploy": "wrangler deploy --config backend/wrangler.jsonc",
+    "db:local": "wrangler d1 execute zuitopia --local --config backend/wrangler.jsonc --file backend/schema.sql",
+    "db:remote": "wrangler d1 execute zuitopia --remote --config backend/wrangler.jsonc --file backend/schema.sql",
+    "password": "node scripts/password.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.144.0"
+  }
+}

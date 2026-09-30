@@ -1,0 +1,12 @@
+[
+  {
+    "name": "NASA",
+    "feed": "https://www.nasa.gov/feed/",
+    "topic": "space",
+    "allowed_hosts": [
+      "www.nasa.gov",
+      "nasa.gov",
+      "science.nasa.gov"
+    ]
+  }
+]

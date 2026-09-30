@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": "demo-ocean",
+      "topic": "nature",
+      "source_name": "NOAA",
+      "source_url": "https://oceanservice.noaa.gov/news/feb26/undersea-creatures-valentines-day.html",
+      "published_at": null,
+      "vi": {
+        "title": "Bạch tuộc có ba trái tim",
+        "summary": "Hai trái tim đưa máu qua mang. Trái tim còn lại bơm máu tới phần còn lại của cơ thể."
+      },
+      "en": {
+        "title": "An octopus has three hearts",
+        "summary": "Two hearts pump blood through the gills. The third pumps blood to the rest of the body."
+      }
+    },
+    {
+      "id": "demo-venus",
+      "topic": "space",
+      "source_name": "NASA",
+      "source_url": "https://science.nasa.gov/venus/facts/",
+      "published_at": null,
+      "vi": {
+        "title": "Sao Kim quay một vòng còn lâu hơn đi một vòng quanh Mặt Trời",
+        "summary": "Sao Kim mất khoảng 243 ngày Trái Đất để tự quay một vòng, nhưng chỉ khoảng 225 ngày để hoàn thành một quỹ đạo quanh Mặt Trời."
+      },
+      "en": {
+        "title": "Venus takes longer to rotate than to orbit the Sun",
+        "summary": "Venus takes about 243 Earth days to rotate once, but only about 225 days to complete an orbit around the Sun."
+      }
+    },
+    {
+      "id": "demo-moon",
+      "topic": "space",
+      "source_name": "NASA",
+      "source_url": "https://science.nasa.gov/moon/facts/",
+      "published_at": null,
+      "vi": {
+        "title": "Mặt Trăng đang dần đi xa Trái Đất",
+        "summary": "Khoảng cách tăng khoảng 3,8 cm mỗi năm. Các phép đo laser tới những tấm phản xạ trên Mặt Trăng giúp theo dõi chuyển động này."
+      },
+      "en": {
+        "title": "The Moon is slowly moving away from Earth",
+        "summary": "The distance increases by about 3.8 centimetres a year. Laser measurements to reflectors on the Moon help track this movement."
+      }
+    }
+  ],
+  "has_more": false
+}
