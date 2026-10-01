@@ -56,9 +56,28 @@ def fetch_bytes(url,maximum=2_000_000):
   if len(data)>maximum:raise ValueError('Feed too large')
   return data
 
-def post_json(url,body,key):
- req=urllib.request.Request(url,data=json.dumps(body).encode(),headers={'Content-Type':'application/json','Authorization':'Bearer '+key},method='POST')
- with urllib.request.urlopen(req,timeout=60) as response:return json.load(response)
+def post_json(url, body, key):
+    import urllib.error
+
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode(),
+        headers={
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + key,
+        },
+        method='POST',
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=60) as response:
+            return json.load(response)
+    except urllib.error.HTTPError as error:
+        detail = error.read(4000).decode('utf-8', errors='replace')
+        if key:
+            detail = detail.replace(key, '[REDACTED]')
+        print(f'API HTTP {error.code}: {detail}', flush=True)
+        raise
 
 def edit_with_ai(post,key,model):
  if not post['source_excerpt']:return None
