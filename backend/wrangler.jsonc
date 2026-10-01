@@ -11,7 +11,7 @@
   "d1_databases": [{
     "binding": "DB",
     "database_name": "zuitopia",
-    "database_id": "00000000-0000-0000-0000-000000000000"
+    "database_id": "ebf9c940-0d02-4a70-9061-d92d1741d526"
   }],
 "vars": {
   "PUBLIC_ORIGIN": "https://zuitopia-creator.github.io",
