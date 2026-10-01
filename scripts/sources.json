@@ -3,10 +3,30 @@
     "name": "NASA",
     "feed": "https://www.nasa.gov/feed/",
     "topic": "space",
-    "allowed_hosts": [
-      "www.nasa.gov",
-      "nasa.gov",
-      "science.nasa.gov"
-    ]
+    "allowed_hosts": ["www.nasa.gov", "nasa.gov", "science.nasa.gov"]
+  },
+  {
+    "name": "ScienceDaily",
+    "feed": "https://www.sciencedaily.com/rss/top/science.xml",
+    "topic": "science",
+    "allowed_hosts": ["www.sciencedaily.com", "sciencedaily.com"]
+  },
+  {
+    "name": "ScienceDaily",
+    "feed": "https://www.sciencedaily.com/rss/plants_animals.xml",
+    "topic": "nature",
+    "allowed_hosts": ["www.sciencedaily.com", "sciencedaily.com"]
+  },
+  {
+    "name": "Colossal",
+    "feed": "https://www.thisiscolossal.com/feed/",
+    "topic": "culture",
+    "allowed_hosts": ["www.thisiscolossal.com", "thisiscolossal.com"]
+  },
+  {
+    "name": "Positive News",
+    "feed": "https://www.positive.news/feed/",
+    "topic": "everyday",
+    "allowed_hosts": ["www.positive.news", "positive.news"]
   }
 ]
