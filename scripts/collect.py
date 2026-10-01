@@ -102,7 +102,7 @@ def main():
  for source in sources:
   try:
    data=args.fixtures.read_bytes() if args.fixtures else fetch_bytes(source['feed'])
-   posts.extend(parse_feed(data,source))
+   posts.extend(parse_feed(data,source)[:4])
   except Exception as exc:
    errors+=1;print(f"Source unavailable: {source['name']} ({type(exc).__name__})",file=sys.stderr)
  if errors==len(sources):raise SystemExit('All sources failed; existing content is unchanged.')
