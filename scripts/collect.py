@@ -65,6 +65,7 @@ def post_json(url, body, key):
         headers={
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + key,
+            'User-Agent': 'Zuitopia/1.0 (draft collector)',
         },
         method='POST',
     )
