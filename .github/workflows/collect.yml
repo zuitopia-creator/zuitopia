@@ -27,8 +27,6 @@ jobs:
         env:
           API_URL: ${{ secrets.API_URL }}
           INGEST_TOKEN: ${{ secrets.INGEST_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          AI_MODEL: ${{ vars.AI_MODEL }}
         run: |
           curl -i -X POST \
             "$API_URL/api/ingest/seen" \
